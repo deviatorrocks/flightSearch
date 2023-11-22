@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A6712B42B0DDBC20092A966 /* SearchUserRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6712B32B0DDBC20092A966 /* SearchUserRow.swift */; };
 		7AC258482B0C6DA40064A474 /* SearchAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC258472B0C6DA40064A474 /* SearchAppApp.swift */; };
 		7AC2584A2B0C6DA40064A474 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC258492B0C6DA40064A474 /* ContentView.swift */; };
 		7AC2584C2B0C6DA60064A474 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AC2584B2B0C6DA60064A474 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A6712B32B0DDBC20092A966 /* SearchUserRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserRow.swift; sourceTree = "<group>"; };
 		7AC258442B0C6DA40064A474 /* SearchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AC258472B0C6DA40064A474 /* SearchAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAppApp.swift; sourceTree = "<group>"; };
 		7AC258492B0C6DA40064A474 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				7AC258492B0C6DA40064A474 /* ContentView.swift */,
 				7AC258712B0CA7B90064A474 /* SearchUserViewModel.swift */,
 				7AC490742B0CB71800967917 /* SearchBarView.swift */,
+				7A6712B32B0DDBC20092A966 /* SearchUserRow.swift */,
 				7AC2584B2B0C6DA60064A474 /* Assets.xcassets */,
 				7AC2584D2B0C6DA60064A474 /* Preview Content */,
 			);
@@ -263,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A6712B42B0DDBC20092A966 /* SearchUserRow.swift in Sources */,
 				7AC490752B0CB71800967917 /* SearchBarView.swift in Sources */,
 				7AC2584A2B0C6DA40064A474 /* ContentView.swift in Sources */,
 				7AC258482B0C6DA40064A474 /* SearchAppApp.swift in Sources */,

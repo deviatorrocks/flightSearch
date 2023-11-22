@@ -11,17 +11,18 @@ struct UserSearchResponse: Decodable {
     var items: [User]
 }
 
-struct User: Decodable {
+struct User: Decodable, Identifiable {
     var id: Int64
     var login: String
     var avatar_url: URL
 }
 class SearchUserViewModel: ObservableObject {
     @Published var userList: [User] = []
+    @Published var name: String = "App"
     
     private var cancellable: Set<AnyCancellable> = []
     
-    func fetchUserList(name: String) {
+    func fetchUserList() {
         var urlComponents = URLComponents(string: "https://api.github.com/search/users")!
         urlComponents.queryItems = [
             URLQueryItem(name: "q", value: name)
@@ -39,7 +40,7 @@ class SearchUserViewModel: ObservableObject {
             .sink(receiveValue: { [weak self] result in
                 if let strongSelf = self {
                     strongSelf.userList = result
-                    print("User list is: \(result)")
+                    print("Count is: \(result.count)")
                 }
             })
             .store(in: &cancellable)
