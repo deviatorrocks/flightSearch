@@ -7,17 +7,19 @@
 
 import Foundation
 import Combine
+import UIKit
 struct UserSearchResponse: Decodable {
     var items: [User]
 }
 
-struct User: Decodable, Identifiable {
+struct User: Decodable, Identifiable, Hashable {
     var id: Int64
     var login: String
     var avatar_url: URL
 }
 class SearchUserViewModel: ObservableObject {
-    @Published var userList: [User] = []
+    @Published private (set) var userList = [User]()
+    @Published private (set) var userAvatarImages = [User: UIImage]()
     @Published var name: String = "App"
     
     private var cancellable: Set<AnyCancellable> = []
@@ -40,9 +42,39 @@ class SearchUserViewModel: ObservableObject {
             .sink(receiveValue: { [weak self] result in
                 if let strongSelf = self {
                     strongSelf.userList = result
+                    //print(result)
+                    //print("\n----\n")
                     print("Count is: \(result.count)")
                 }
             })
+            .store(in: &cancellable)
+    }
+    
+    func fetchAvatarImage(user: User)  {
+        guard case .none = userAvatarImages[user] else {
+            return
+        }
+        print("Avatar url: \(user.avatar_url)")
+        let urlRequest = URLRequest(url: user.avatar_url)
+        URLSession.shared.dataTaskPublisher(for: urlRequest)
+            .map {
+                print($0.data)
+                return UIImage(data: $0.data)
+            }
+            .replaceError(with: nil)
+            .receive(on: DispatchQueue.main)
+            .sink { result in
+                switch result {
+                case .finished:
+                    print("finished")
+                case .failure(let error):
+                    print("error is: \(error)")
+                }
+            } receiveValue: { [weak self] image in
+                if let strongSelf = self {
+                    strongSelf.userAvatarImages[user] = image
+                }
+            }
             .store(in: &cancellable)
     }
 }

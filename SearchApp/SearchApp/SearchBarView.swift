@@ -10,7 +10,6 @@ import SwiftUI
 
 struct SearchBarView: View {
     @Binding var text: String
-    //@State private var text: String = ""
     @State var action: () -> Void
     
     var body: some View {
@@ -20,12 +19,12 @@ struct SearchBarView: View {
                 TextField("Enter user name", text: $text)
                     .background(Color.white.opacity(0.4))
                     .cornerRadius(8)
-                    .frame(height: 32)
+                    .frame(height: 44)
                 Button("Search", action: action)
-                    .foregroundColor(.yellow)
+                    .foregroundColor(.black)
             }
             .padding([.trailing, .leading], 16)
         }
-        .frame(height: 50)
+        .frame(height: 60)
     }
 }

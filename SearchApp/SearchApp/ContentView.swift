@@ -22,8 +22,10 @@ struct ContentView: View {
                 }
                 List() {
                     ForEach(searchUserViewModel.userList) { user in
-                        //let _ = print("Search user row view:")
                         SearchUserRow(viewModel: self.searchUserViewModel, user: user)
+                            .onAppear {
+                                self.searchUserViewModel.fetchAvatarImage(user: user)
+                            }
                     }
                 }
             }

@@ -15,17 +15,17 @@ struct SearchUserRow: View {
     var body: some View {
         ZStack {
             HStack {
-                Color.yellow
-                Text(user.login).font(Font.system(size: 18).bold())
-                Text("\(user.id)").font(Font.system(size: 18).bold())
+                viewModel.userAvatarImages[user].map { image in
+                    Image(uiImage: image)
+                        .frame(width: 54, height: 54)
+                        .aspectRatio(contentMode: .fit)
+                        .clipShape(Circle())
+                        .overlay(Circle().stroke(Color.black, lineWidth: 1))
+                }
+                Text(user.login)
                 Spacer()
-                //let _ = print("Coming here.....\(user.login)  \(user.id)")
             }
             .frame(height: 60)
         }
-    }
-    
-    func printValue() {
-        print("Coming here.....")
     }
 }

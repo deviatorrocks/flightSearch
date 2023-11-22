@@ -7,17 +7,176 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E3D67B22-B9F1-4A77-9D6E-A68168960C8D"
+            uuid = "95CA6020-C1C6-46C7-9CEB-A879C4EFF0CE"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SearchApp/ContentView.swift"
+            filePath = "SearchApp/SearchUserViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "body"
-            landmarkType = "24">
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "fetchAvatarImage(user:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "95CA6020-C1C6-46C7-9CEB-A879C4EFF0CE - 44af53f5614429a1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Combine.Subscribers.Completion&lt;Swift.Never&gt;) -&gt; () in SearchApp.SearchUserViewModel.fetchAvatarImage(user: SearchApp.User) -&gt; ()"
+                  moduleName = "SearchApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zmo-mac-mandhark-01/Documents/development/Github/SSH/flightSearch/SearchApp/SearchApp/SearchUserViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "260">
+               </Location>
+               <Location
+                  uuid = "95CA6020-C1C6-46C7-9CEB-A879C4EFF0CE - 44af53f5614429a1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Combine.Subscribers.Completion&lt;Swift.Never&gt;) -&gt; () in SearchApp.SearchUserViewModel.fetchAvatarImage(user: SearchApp.User) -&gt; ()"
+                  moduleName = "SearchApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zmo-mac-mandhark-01/Documents/development/Github/SSH/flightSearch/SearchApp/SearchApp/SearchUserViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "833390E3-0495-4B3E-9444-ECC20006C266"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SearchApp/SearchUserViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "fetchAvatarImage(user:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "833390E3-0495-4B3E-9444-ECC20006C266 - 103bfaa833071412"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SearchApp.SearchUserViewModel.fetchAvatarImage(user: SearchApp.User) -&gt; ()"
+                  moduleName = "SearchApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zmo-mac-mandhark-01/Documents/development/Github/SSH/flightSearch/SearchApp/SearchApp/SearchUserViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "704">
+               </Location>
+               <Location
+                  uuid = "833390E3-0495-4B3E-9444-ECC20006C266 - ba8d3ca5c9baba0b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 (Swift.Optional&lt;__C.UIImage&gt;) -&gt; () in SearchApp.SearchUserViewModel.fetchAvatarImage(user: SearchApp.User) -&gt; ()"
+                  moduleName = "SearchApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zmo-mac-mandhark-01/Documents/development/Github/SSH/flightSearch/SearchApp/SearchApp/SearchUserViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "240">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1AFCA8E1-4713-4346-B44F-025B5765953F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SearchApp/SearchUserViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "fetchAvatarImage(user:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1AFCA8E1-4713-4346-B44F-025B5765953F - ba8d3ca5c9babbe8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 (Swift.Optional&lt;__C.UIImage&gt;) -&gt; () in SearchApp.SearchUserViewModel.fetchAvatarImage(user: SearchApp.User) -&gt; ()"
+                  moduleName = "SearchApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zmo-mac-mandhark-01/Documents/development/Github/SSH/flightSearch/SearchApp/SearchApp/SearchUserViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "348">
+               </Location>
+               <Location
+                  uuid = "1AFCA8E1-4713-4346-B44F-025B5765953F - ba8d3ca5c9babbe8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 (Swift.Optional&lt;__C.UIImage&gt;) -&gt; () in SearchApp.SearchUserViewModel.fetchAvatarImage(user: SearchApp.User) -&gt; ()"
+                  moduleName = "SearchApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zmo-mac-mandhark-01/Documents/development/Github/SSH/flightSearch/SearchApp/SearchApp/SearchUserViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  uuid = "1AFCA8E1-4713-4346-B44F-025B5765953F - ba8d3ca5c9babbe8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 (Swift.Optional&lt;__C.UIImage&gt;) -&gt; () in SearchApp.SearchUserViewModel.fetchAvatarImage(user: SearchApp.User) -&gt; ()"
+                  moduleName = "SearchApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zmo-mac-mandhark-01/Documents/development/Github/SSH/flightSearch/SearchApp/SearchApp/SearchUserViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "216">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A89FB8B8-E1A7-4917-9D0C-280BE34FE3A0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SearchApp/SearchUserViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "fetchAvatarImage(user:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
