@@ -14,8 +14,8 @@
             filePath = "SearchApp/SearchUserViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
             landmarkName = "fetchAvatarImage(user:)"
             landmarkType = "7">
             <Locations>
@@ -62,8 +62,8 @@
             filePath = "SearchApp/SearchUserViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "fetchAvatarImage(user:)"
             landmarkType = "7">
             <Locations>
@@ -110,8 +110,8 @@
             filePath = "SearchApp/SearchUserViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
             landmarkName = "fetchAvatarImage(user:)"
             landmarkType = "7">
             <Locations>
@@ -173,8 +173,8 @@
             filePath = "SearchApp/SearchUserViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
             landmarkName = "fetchAvatarImage(user:)"
             landmarkType = "7">
          </BreakpointContent>

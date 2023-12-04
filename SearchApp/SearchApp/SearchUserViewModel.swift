@@ -8,6 +8,7 @@
 import Foundation
 import Combine
 import UIKit
+
 struct UserSearchResponse: Decodable {
     var items: [User]
 }
@@ -17,6 +18,7 @@ struct User: Decodable, Identifiable, Hashable {
     var login: String
     var avatar_url: URL
 }
+
 class SearchUserViewModel: ObservableObject {
     @Published private (set) var userList = [User]()
     @Published private (set) var userAvatarImages = [User: UIImage]()
@@ -42,9 +44,6 @@ class SearchUserViewModel: ObservableObject {
             .sink(receiveValue: { [weak self] result in
                 if let strongSelf = self {
                     strongSelf.userList = result
-                    //print(result)
-                    //print("\n----\n")
-                    print("Count is: \(result.count)")
                 }
             })
             .store(in: &cancellable)
@@ -54,7 +53,6 @@ class SearchUserViewModel: ObservableObject {
         guard case .none = userAvatarImages[user] else {
             return
         }
-        print("Avatar url: \(user.avatar_url)")
         let urlRequest = URLRequest(url: user.avatar_url)
         URLSession.shared.dataTaskPublisher(for: urlRequest)
             .map {
