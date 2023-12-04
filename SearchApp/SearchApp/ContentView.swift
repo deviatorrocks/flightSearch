@@ -12,7 +12,6 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            //Color.yellow
             VStack {
                 Text("Users")
                     .font(Font.largeTitle)
